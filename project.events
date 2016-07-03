@@ -1,0 +1,21 @@
+a:1:{s:3:"app";a:11:{s:7:"button1";a:1:{s:7:"onclick";s:182:"$result = c("openDlg1")->execute();
+if ($result)
+{
+$arr = c("openDlg1")->files;
+foreach ($arr as $i=>$file)
+$arr[$i] = basename($file);
+c("listBox1")->items->setArray($arr);
+}";}s:7:"button2";a:1:{s:7:"onclick";s:101:"$music = c("listBox1")->items->selected;
+c("sqPlayer1")->fileName = $music;
+c("sqPlayer1")->play();";}s:7:"button3";a:1:{s:7:"onclick";s:24:"c("sqPlayer1")->pause();";}s:7:"button4";a:1:{s:7:"onclick";s:23:"c("sqPlayer1")->stop();";}s:8:"listbox1";a:1:{s:10:"ondblclick";s:101:"$music = c("listBox1")->items->selected;
+c("sqPlayer1")->fileName = $music;
+c("sqPlayer1")->play();";}s:5:"about";a:1:{s:9:"onexecute";s:35:"ShowForm(c("about"), SW_SHOWMODAL);";}s:2:"dt";a:1:{s:9:"onexecute";s:35:"ShowForm(c("Donut"), SW_SHOWMODAL);";}s:5:"other";a:1:{s:9:"onexecute";s:35:"Run("http://sdsoft.esy.es", false);";}s:4:"open";a:1:{s:9:"onexecute";s:182:"$result = c("openDlg1")->execute();
+if ($result)
+{
+$arr = c("openDlg1")->files;
+foreach ($arr as $i=>$file)
+$arr[$i] = basename($file);
+c("listBox1")->items->setArray($arr);
+}";}s:4:"play";a:1:{s:9:"onexecute";s:101:"$music = c("listBox1")->items->selected;
+c("sqPlayer1")->fileName = $music;
+c("sqPlayer1")->play();";}s:4:"quit";a:1:{s:9:"onexecute";s:13:"app::close();";}}}
